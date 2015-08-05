@@ -11,7 +11,7 @@
 	<string name="label_card_reminder">Lembre-me em 5 minutos</string>
 	<string name="new_card">Novo cartão</string>
 	<string name="not_reminder">Cartão não marcado para ser lembrado</string>
-	<string name="was_remembered_in">foi lembrado em %d segundos</string>
-	<string name="will_remember_in">Ira ser lembrado em  %d segundos</string>
-
+	<string name="remember_in">Lembrar em %s</string>
+	<string name="title_card_detail">Alterar cartão</string>
+	<string name="image_button">anexar</string>
 </resources>

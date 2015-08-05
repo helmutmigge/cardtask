@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="cardDetailWindow">
+		<ActionBar id="actionbar"  platform="android" />
+		<Menu platform="android">
+			<MenuItem id="deleteCard"  onClick="deleteCard"/>			
+		</Menu>
+		<ScrollView id="scrollView" showVerticalScrollIndicator="true" >
+		<TextField id="title_tf" title="cardTitle"></TextField>
+		<TextArea id="description_ta" title="cardDescription"></TextArea>
+		<View class="hgroup">
+			<Label id="reminder_lb"></Label>
+			<Switch id="finished_sw" title="cardFineshed"></Switch>
+		</View>
+		<ImageView id="image" ></ImageView>		
+		<Button id="save_button"></Button>
+		<Button id="image_button"></Button>
+		</ScrollView>
+	</Window>
+</Alloy>

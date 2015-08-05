@@ -1,0 +1,61 @@
+
+
+".container": {
+	backgroundColor: "white"
+},
+"#cardDetailWindow": {
+	titleid: "new_card",
+	layout: 'vertical',
+	barColor: '#6d0a0c',
+	backgroundColor: 'transparent',
+	backgroundImage: 'images/grain.png'
+},
+"#scrollView":{
+	layout: 'vertical',
+	backgroundColor: 'transparent',
+},
+"#title_tf": {
+	height: 40,	
+	width: 250,
+	keyboardType:Titanium.UI.KEYBOARD_DEFAULT,
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: L('hint_card_title')
+},
+"#description_ta":{
+	height: 240,	
+	width: 250,
+	keyboardType:Titanium.UI.KEYBOARD_DEFAULT,
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: L('hint_card_description')
+	
+},
+"#reminder_lb":{
+	textid:'label_card_reminder'
+},
+".hgroup":{
+	layout:'horizontal',
+	width : Ti.UI.SIZE, 
+    height: Ti.UI.SIZE,	
+	backgroundColor: 'transparent'	
+},
+"#title_tf[platform=android]": {
+	height:Ti.UI.SIZE
+},
+"#save_button":{
+	title: L('save'),
+	height:Ti.UI.SIZE,
+	width: 80	
+}
+"#image_button":{
+	title: L('image_button'),
+	height:Ti.UI.SIZE,
+	width: 80	
+}
+"MenuItem[platform=android]": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#deleteCard[platform=android]": {
+    icon: Ti.Android.R.drawable.ic_menu_delete
+}

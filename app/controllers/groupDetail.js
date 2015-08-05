@@ -6,9 +6,9 @@ function dataCardTransformation(_model) {
 	Ti.API.info('transform:' + JSON.stringify(transform));
 	if (transform.card_finished && transform.card_date_reminder > 0) {
 
-		var dateReminder = new Date(transform.card_date_reminder);
-		transform.reminder_text =  dateReminder.toLocaleDateString() + " - " + dateReminder.toLocaleTimeString();
-
+		var dateReminder = new Date(Number(transform.card_date_reminder));
+		//transform.reminder_text =  dateReminder.toLocaleDateString() + " - " + dateReminder.toLocaleTimeString();
+		transform.reminder_text = String.format(L('remember_in'),String.formatDate(dateReminder) + " " + String.formatTime(dateReminder));
 	} else {
 		transform.reminder_text = L('not_reminder');
 	}
@@ -46,5 +46,31 @@ function deleteGroup(e) {
 	}
 
 }
+
+$.table.addEventListener('click', function(e) {	
+	Ti.API.info( "id ["+e.rowData.model+ "]");
+	var card = Alloy.Collections.Card.get(e.rowData.model);
+	Ti.API.info( JSON.stringify(card));
+	var ctrl = Alloy.createController('cardDetail', card);
+	
+	ctrl.getView().addEventListener('open', function() {
+		if (OS_ANDROID) {
+			// for android actionbar
+			var activity = ctrl.getView().getActivity();
+			if (activity != undefined && activity.actionBar != undefined) {
+				activity.actionBar.displayHomeAsUp = true;
+				activity.actionBar.title = L('title_card_detail');
+			}
+
+			activity.actionBar.onHomeIconItemSelected = function() {
+				Ti.API.info("Home clicked!");
+				ctrl.getView().close();
+			};
+		}
+	});
+	
+	var win = ctrl.getView();
+	win.open();	
+});
 
 Alloy.Collections.Card.fetch();

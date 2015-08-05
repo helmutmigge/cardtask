@@ -11,8 +11,9 @@
 	<string name="label_card_reminder">reminder in five minutes</string>
 	<string name="new_card">New Card</string>
 	<string name="not_reminder">Not reminder</string>
-	<string name="was_remembered_in">Was remembered in %d secounds</string>
-	<string name="will_remember_in">Will remember in %d secounds</string>
+	<string name="remember_in">Remember in %s</string>
+	<string name="title_card_detail">Card Detail</string>
+	<string name="image_button">Attach</string>
 </resources>
 
 
