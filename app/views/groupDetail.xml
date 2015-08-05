@@ -1,0 +1,13 @@
+<Alloy>
+	<Collection src="Card" />
+	<Window id="groupDetailWindow" class='container'>
+		<ActionBar id="actionbar"  platform="android" />
+		<Menu platform="android">
+			<MenuItem id="deleteGroup"  onClick="deleteGroup"/>
+			<MenuItem id="addCard"  onClick="addCard"/>
+		</Menu>
+		<TableView id="table" dataCollection="Card" dataTransform="dataCardTransformation" dataFilter="filterCards" >
+			<Require src="cardRow"/>
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,22 @@
+".container": {
+	backgroundColor: "white"
+},
+"Window": {
+		backgroundColor:'transparent',
+		backgroundImage: 'images/grain.png',
+		titleid: 'groups',
+		barColor: '#6d0a0c',
+},
+'#table' : {
+	backgroundColor: 'transparent'
+},
+"#actionbar[platform=android]":{
+	titleid:'groups'
+},
+"MenuItem[platform=android]": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#addGroup[platform=android]": {
+    icon: Ti.Android.R.drawable.ic_menu_add
+}
+

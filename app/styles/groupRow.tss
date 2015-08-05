@@ -1,0 +1,20 @@
+
+"Label": {
+	color: "#FFF",
+	font: {
+		fontSize: "20dp"
+	}
+},
+"#row": {
+	className: "loc_row",
+	dataId : ""
+},
+"#group_name": {
+	top: "2dp",	
+	height: Ti.UI.SIZE,
+	left: "5dp",
+	right: "5dp",
+	font: {
+		fontSize: "24dp"
+	}
+},

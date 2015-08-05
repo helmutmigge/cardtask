@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="groupAddWindow">
+		<TextField id="name_tf" title="groupName"></TextField>
+		<Button id="save_button"></Button>
+	</Window>
+</Alloy>

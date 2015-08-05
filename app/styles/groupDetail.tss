@@ -1,0 +1,18 @@
+".container": {
+	backgroundColor: "white"
+},
+"Window": {
+		backgroundColor:'transparent',
+		backgroundImage: 'images/grain.png',
+		titleid: 'groups',
+		barColor: '#6d0a0c',
+},
+'#table' : {
+	backgroundColor: 'transparent'
+},
+"#deleteGroup[platform=android]": {
+    title: L('deleteGroup')
+}
+"#addCard[platform=android]": {
+    title: L('addCard')
+}

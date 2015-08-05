@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="cardAddWindow">
+		<TextField id="title_tf" title="cardTitle"></TextField>
+		<TextArea id="description_ta" title="cardDescription"></TextArea>
+		<View class="hgroup">
+			<Label id="reminder_lb"></Label>
+			<Switch id="finished_sw" title="cardFineshed"></Switch>
+			
+		</View>					
+		<Button id="save_button"></Button>
+	</Window>
+</Alloy>

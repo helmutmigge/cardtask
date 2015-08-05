@@ -1,0 +1,12 @@
+<Alloy>
+	<Collection src="Group" />
+	<Window class='container'>
+		<ActionBar id="actionbar"  platform="android" />
+		<Menu platform="android">
+			<MenuItem id="addGroup" title="addGroup" onClick="addGroup" />
+		</Menu>
+		<TableView id="table" dataCollection="Group">
+			<Require src="groupRow"/>
+		</TableView>
+	</Window>
+</Alloy>

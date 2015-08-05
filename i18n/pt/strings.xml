@@ -1,0 +1,17 @@
+<resources>
+	<string name="groups">Grupo de tarefas</string>
+	<string name="new_group">Novo Grupo</string>
+	<string name="hint_group_name">Nome do Grupo</string>
+	<string name="error_group_name">Nome do grupo não pode ser em branco</string>
+	<string name="save">Salvar</string>
+	<string name="deleteGroup">Deletar Grupo</string>
+	<string name="addCard">Adicionar Cartão</string>
+	<string name="hint_card_title">Titulo </string>
+	<string name="hint_card_description">Descrição</string>
+	<string name="label_card_reminder">Lembre-me em 5 minutos</string>
+	<string name="new_card">Novo cartão</string>
+	<string name="not_reminder">Cartão não marcado para ser lembrado</string>
+	<string name="was_remembered_in">foi lembrado em %d segundos</string>
+	<string name="will_remember_in">Ira ser lembrado em  %d segundos</string>
+
+</resources>

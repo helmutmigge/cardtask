@@ -1,0 +1,5 @@
+<Alloy>
+	<TableViewRow id="row" dataId="" model="{group_id}">		
+			<Label id="group_name" text="{group_name}"/>				
+	</TableViewRow>
+</Alloy>

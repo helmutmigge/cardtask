@@ -1,0 +1,24 @@
+"Label": {
+	color: "#FFF",
+	left: "15dp",
+	font: {
+		fontSize: "16dp"
+	}
+},
+".vgroup": {
+	layout: "vertical",
+	height: Ti.UI.SIZE
+},
+"#row": {
+	className: "loc_row",
+	dataId : ""
+},
+"#card_title": {
+	top: "2dp",
+	height: Ti.UI.SIZE,
+	left: "5dp",
+	right: "5dp",
+	font: {
+		fontSize: "24dp"
+	}
+},

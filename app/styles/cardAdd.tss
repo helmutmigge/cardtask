@@ -1,0 +1,46 @@
+
+".container": {
+	backgroundColor: "white"
+},
+"#cardAddWindow": {
+	titleid: "new_card",
+	layout: 'vertical',
+	barColor: '#6d0a0c',
+	backgroundColor: 'transparent',
+	backgroundImage: 'images/grain.png'
+},
+
+"#title_tf": {
+	height: 40,	
+	width: 250,
+	keyboardType:Titanium.UI.KEYBOARD_DEFAULT,
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: L('hint_card_title')
+},
+"#description_ta":{
+	height: 240,	
+	width: 250,
+	keyboardType:Titanium.UI.KEYBOARD_DEFAULT,
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: L('hint_card_description')
+	
+},
+"#reminder_lb":{
+	textid:'label_card_reminder'
+},
+".hgroup":{
+	layout:'horizontal',
+	width : Ti.UI.SIZE, 
+    height: Ti.UI.SIZE,	
+	backgroundColor: 'transparent'	
+},
+"#title_tf[platform=android]": {
+	height:Ti.UI.SIZE
+},
+"#save_button":{
+	title: L('save'),
+	height:Ti.UI.SIZE,
+	width: 80	
+}
