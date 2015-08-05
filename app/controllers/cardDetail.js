@@ -25,7 +25,9 @@ $.save_button.addEventListener('click', function(_e) {
 		}
 
 		card.save();
-
+		if (card.get('card_finished')) {
+			startNotification(card);
+		}
 		Alloy.Collections.Card.fetch();
 
 		$.cardDetailWindow.close();
@@ -79,7 +81,7 @@ $.image_button.addEventListener('click', function(_e) {
 	}
 
 });
-function deleteCard (e){
+function deleteCard(e) {
 	card.destroy();
 
 	// force tables to update
@@ -90,5 +92,23 @@ function deleteCard (e){
 		setTimeout(function() {
 			$.cardDetailWindow.close();
 		}, 2000);
+	}
+}
+
+function startNotification(card) {
+	if (OS_ANDROID) {
+		var notification = Titanium.Android.createNotification({
+			contentTitle : L('reminder_schedule'),
+			contentText : card.get('card_title'),
+			// Blank intent that will remove the notification when the user taps it
+			// Do not override the default value of the 'flags' property
+			contentIntent : Ti.Android.createPendingIntent({
+				intent : Ti.Android.createIntent({})
+			}),
+			icon : Ti.App.Android.R.drawable.warn,
+			number : card.get('card_id'),
+			when : new Date(Number(card.get('card_date_reminder')))
+		});
+		Ti.Android.NotificationManager.notify(card.get('card_id'), notification);
 	}
 }

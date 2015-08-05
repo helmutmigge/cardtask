@@ -14,4 +14,5 @@
 	<string name="remember_in">Lembrar em %s</string>
 	<string name="title_card_detail">Alterar cartão</string>
 	<string name="image_button">anexar</string>
+	<string name="reminder_schedule">Lembrete de cartão</string>
 </resources>
