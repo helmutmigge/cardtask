@@ -109,6 +109,7 @@ function startNotification(card) {
 			number : card.get('card_id'),
 			when : new Date(Number(card.get('card_date_reminder')))
 		});
+		Ti.API.info('agendando notificação - ' + new Date(Number(card.get('card_date_reminder'))) );
 		Ti.Android.NotificationManager.notify(card.get('card_id'), notification);
 	}
 }

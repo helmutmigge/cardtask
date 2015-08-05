@@ -3,7 +3,7 @@ var group = arguments[0] || {};
 function dataCardTransformation(_model) {
 	Ti.API.info(JSON.stringify(_model));
 	var transform = _model.toJSON();
-	Ti.API.info('transform:' + JSON.stringify(transform));
+	
 	if (transform.card_finished && transform.card_date_reminder > 0) {
 
 		var dateReminder = new Date(Number(transform.card_date_reminder));
